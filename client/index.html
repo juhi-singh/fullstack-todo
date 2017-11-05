@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="parent">
+			<input type="text" name="fname" id="taskInput" placeholder="Enter your task for today" onkeypress="checkForEnter(event)">
+			<img src="images/add.png" onclick='addRow()' />
+			<!-- <input type="image" src="images/add.png" name="addrow" /> -->
+		</div>	
+		<div>
+			<ul id="listParent" class="todolist">
+				<li id="1">Dinner at My place 
+				<!-- <input type="image"src="images/delete.png" name="deleterow" class="img1" /> -->
+				<img src="images/delete.png" onclick='deleteRow(1)' />
+				</li>
+
+				<li id="2">Shopping for Dhruv 
+				<!-- <input type="image" src="images/delete.png" name="deleterow" class="img1" /> -->
+				<img src="images/delete.png" onclick='deleteRow(2)' />
+				</button>
+				</li>
+			</ul>
+		</div>
+		<div id="demo"></div>
+		<button onclick="loadDoc()"> Load Data</button>
+		<a href="webapi/messages">Click Here</a>  
+		<script src="script.js"></script>
+	</body>
+</html>
